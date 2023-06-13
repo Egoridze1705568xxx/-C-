@@ -1,5 +1,5 @@
 ﻿//Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
-/*
+
 
 Console.Write("Введите колличество строк: ");
 double m = double.Parse(Console.ReadLine());
@@ -8,7 +8,7 @@ double n = double.Parse(Console.ReadLine());
 
 
 
-double[,] array =  GenereteRandom2DArray(3, 4);
+double[,] array =  GenereteRandom2DArray(m, n);
 
 PrintArray(array);
 
@@ -41,5 +41,5 @@ double[,] GenereteRandom2DArray(double m, double n)
     }
     return array;
 }
-*/
+
 
