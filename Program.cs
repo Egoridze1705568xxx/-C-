@@ -1,58 +1,23 @@
-﻿//Задача 60. ...Сформируйте трёхмерный массив из  двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
-//Массив размером 2 x 2 x 2
+﻿/* Задача 64: Задайте значение N. Напишите программу, которая выведет все натуральные числа в промежутке от N до 1. Выполнить с помощью рекурсии.
+N = 5 -> "5, 4, 3, 2, 1"
+N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
+*/
 
 /*
+int n = int.Parse(Console.ReadLine( ));
 
-Console.Write("Введите колличество строк: ");
-double m = double.Parse(Console.ReadLine());
-Console.Write("Введите колличество столбцов: ");
-double n = double.Parse(Console.ReadLine());
-Console.Write("Введите колличество столбцов: ");
-double x = double.Parse(Console.ReadLine());
+PrintNumbers(n);
 
-
-double[, ,] array =  GenereteRandom2DArray(m, n, x);
-
-PrintArray(array);
-
-void PrintArray(double[, ,] array )
+void PrintNumbers(int n)
 {
-for (var i = 0; i < array.GetLength(0); i++)
-{
-    for (var j = 0; j < array.GetLength(1); j++)
+    if (n < 1)
     {
-       for (int z = 0; z < array.GetLength(2); z++)
-       {
-        
-       }
-       // Console.Write($"{array[i,j]} ");
+        return;
     }
-    Console.WriteLine();
+    
+    Console.Write(n);
+    Console.Write(", ");
+    PrintNumbers(--n);
 }
-}
-
-double[, ,] GenereteRandom2DArray(double m, double n, double x)
-{
-    double [, ,] array = new double [(int)m, (int)n, (int)x];
-
-    Random random = new Random();
-
-    for (var i = 0; i < m; i++)
-    {
-        for (var j = 0; j < n; j++)
-        {
-                for (int z = 0; z < x; z++)
-                {
-                    array [i,j,z] = random.Next(0,100);
-                    Console.Write($"{array[i,j,z]} ");
-                    Console.Write($"({i},{j},{z}) ");
-
-                }
-        
-        }
-        Console.WriteLine();
-    }
-    return array;
-}
-
 */
+
